@@ -1,0 +1,208 @@
+*{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+}
+body{
+          
+          background-color: #cdc6c6;
+
+          
+
+}
+.center {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: rgb(47, 47, 199);
+  color: white;
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.total{
+       height: 90vh;
+       width: 90vw;   
+       background-color: rgb(255, 255, 255);
+       margin: 5vh auto;
+       border: 8px solid white;
+       border-radius: 20px;
+       text-align: center;
+
+
+}
+.container nav{
+          display: flex;
+          justify-content: space-around;
+          padding: 20px 30px;
+}
+.container nav ul{
+          display: flex;
+          padding: 10px;
+
+          
+}
+.container nav ul li{
+          display: flex;
+          margin: 0 30px;
+}
+.container nav ul li{
+          list-style: none;
+}
+.container nav ul li a{
+          text-decoration: none;
+          font-weight: bold;
+          color: black;
+}
+.container nav input{
+          background-color: bisque;
+          padding: 0 10px;
+          border-radius: 30px;
+          border: none;
+          width: 80px;
+          height: 40px;
+          font-weight: bold ;
+          cursor: pointer;
+          margin-right: 20px;
+}
+.container nav .hirepart{
+          display: flex;
+          align-items: center;;
+          justify-content: space-between;
+}
+.container nav input:hover{
+  background-color: #5778a8;
+}
+.body{
+          display: flex;
+          justify-content: space-around;
+          padding: 10px;
+}
+.body .naming{
+          position: absolute;
+          top: 180px;
+          left: 80px;
+}
+.body .naming h1{
+          padding-bottom: 25px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body .naming p{
+          padding-bottom: 20px;
+}
+.body .naming button{
+          background-color: rgb(47, 47, 199);
+          color: white;
+          height: 30px;
+          width: 120px;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+}
+.body .naming button:hover{
+  background-color: rgb(103, 104, 163);
+}
+.body .naming button a{
+          color: white;
+          text-decoration: none;
+
+}
+.body .naming .icon{
+          display: flex;
+          position: relative ;
+          top: 160px;
+          left: 20px;
+          
+
+}
+.body .naming .icc{
+          padding: 0 20px;
+}
+.body .pr img{
+          border-radius: 50%;
+          width: 400px;
+          height: 350px;
+          border: 3px solid rgb(152, 136, 136);
+          background: purple;
+          border-radius: 50% 50% 60% 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+          position: relative;
+          left: 300px;
+          top: 60px;
+}
+body.dark-mode {
+       background-color: #121212;
+       color: white;
+     }
+     body.dark-mode .total {
+       background-color: #1e1e1e;
+       border-color: #333;
+     }
+     body.dark-mode nav ul li a {
+       color: white;
+     }
+     body.dark-mode .container nav input {
+       background-color: #444;
+       color: white;
+     }
+     body.dark-mode .container nav input:hover{
+      background-color: #27313f;
+     }
+     body.dark-mode .body .naming button {
+       background-color: #0e6efd;
+     }
+     body.dark-mode .body .naming button:hover {
+      background-color: #5d7eb0;
+    }
+     body.dark-mode .body .pr img {
+       border-color: #555;
+     }
+     
+     
+     @media (max-width: 768px) {
+       .container nav {
+         flex-direction: column;
+         align-items: center;
+       }
+       .container nav ul {
+         flex-direction: column;
+         margin-top: 10px;
+       }
+       .container nav ul li {
+         margin: 10px 0;
+       }
+       .body {
+         flex-direction: column;
+         align-items: center;
+       }
+       .body .naming {
+         position: static;
+         padding: 20px;
+         text-align: center;
+       }
+       .body .pr img {
+         position: static;
+         width: 250px;
+         height: 250px;
+         margin-top: 20px;
+       }
+       .body .naming .icon {
+         position: static;
+         justify-content: center;
+         margin-top: 20px;
+       }
+     }
+     

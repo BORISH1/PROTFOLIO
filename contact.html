@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" integrity="sha512-UOqzMAUyX5LqhGH8Z/CYrEn2lTH7fZ1dN/n0WNFQnxdSojiF/hAfPZl+TZsbRywhQUL0yxCPBpxo69t+gWAVBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('./back.avif'); /* Replace with your background image URL */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #ffffff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | N Borish</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .body.center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 80vh;
+    }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Adds a dark overlay */
-            padding: 20px;
-        }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
 
-        .social-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
+    .social-links a {
+      text-decoration: none;
+      color: #00aced;
+      font-size: 1.2em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-        .social-links a {
-            text-decoration: none;
-            color: #00aced;
-            font-size: 1.2em;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+    .social-links a:hover {
+      text-decoration: none;
+    }
 
-        .social-links a:hover {
-            text-decoration: underline;
-        }
+    .social-links i {
+      font-size: 1.5em;
+    }
+    .social-links a,
+.back-link {
+  text-decoration: none;
+  color: #00aced; 
+}
 
-        .social-links i {
-            font-size: 1.5em; /* Adjust icon size */
-        }
 
-        .back-link {
-            margin-top: 20px;
-            text-decoration: none;
-            color: #00aced;
-            font-weight: bold;
-        }
 
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    
+  </style>
 </head>
 <body>
+  <div class="total">
     <div class="container">
-        <h1>Contact Me</h1>
-        <div class="social-links">
-            <a href="https://wa.me/+919612024828" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://www.instagram.com/infinite_breaker12/?igsh=MXRyOXR3em5xcTZsdA%3D%3D#" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100073332635477" target="_blank">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="https://x.com/BorishNingomba4?t=mzCKNgnLNR944G0nXaVxlg&s=09" target="_blank">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
-        </div>
-        <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <nav>
+        <h1>N Borish.</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+
+    <div class="body center">
+      <h2>📞 Contact Me</h2>
+      <div class="social-links">
+        <a href="https://wa.me/+919612024828" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.instagram.com/infinite_breaker12/?igsh=MXRyOXR3em5xcTZsdA%3D%3D#" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100073332635477" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://x.com/BorishNingomba4?t=mzCKNgnLNR944G0nXaVxlg&s=09" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="mailto:ningombamborishsingh@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i> Gmail
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

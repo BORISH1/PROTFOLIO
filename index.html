@@ -1,72 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('./back.avif'); /* Replace with your background image URL */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #ffffff;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Adds a dark overlay */
-            padding: 20px;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #ffffff;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-
-        p {
-            font-size: 1.2em;
-            max-width: 600px;
-            line-height: 1.6;
-        }
-
-        a {
-            color: #00aced;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <img src="./bori.jpg" alt="My Photo" class="profile-pic"> <!-- Replace with your photo URL -->
-        <h1>Ningombam Borish Singh</h1>
-        <p>
-            Welcome to my portfolio! I am a passionate computer science student with interests in web development, machine learning, and creative writing. 
-            Feel free to explore my projects and learn more about me.
-        </p>
-        <p>
-            <a href="projects.html">View My Projects</a> | <a href="contact.html">Contact Me</a>
-        </p>
-    </div>
+          <div class="total">
+          <div class="container">
+                    <nav>
+                              <h1>N Borish.</h1>
+                              <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="project.html">Project</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                              <div class="hirepart">
+                                        <a href="mailto:borishningombam@gmail.com" target="_blank">
+                                       <input type="submit" value="Hire me"></a>
+          
+
+                                        <div class="icon" onclick="toggleDarkMode()" title="Toggle dark mode">
+                                                  <i class="fa-regular fa-moon" style="cursor: pointer;"></i>
+                                                </div>
+                                                
+
+
+                              </div>
+                              
+                    </nav>
+          </div>
+          <div class="body">
+                    <div class="naming">
+                              <h1>I Am <br> Web Designer </h1>
+                              <p>I am a web developer, proficient in coding and maitaining <br>websites to ensure functionality and responsiveness</p>
+                              <a href="./resume.pdf" download class="cv-button">
+                                        <button>
+                                          <i class="fa-solid fa-file-invoice"></i>
+                                          Download CV
+                                        </button>
+                                      </a>
+                                      
+                              <div class="icon">
+                                        <div class="github icc"><a href="https://github.com/BORISH1" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                                        <div class="instragram icc"><a href="https://www.instagram.com/infinite_breaker12/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                                        <div class="twitter icc"><a href="https://x.com/BorishNingomba4" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div>
+                              
+                                        <a href="https://www.facebook.com/profile.php?id=100073332635477" target="_blank" class="facebook icc">
+                                                  <i class="fa-brands fa-facebook"></i>
+                                                </a>
+                              </div>
+                    </div>
+                    <div class="pr">
+                              <img src="./profile.jpg" alt="" height="">
+                    </div>
+          </div>
+          </div>
+          <script>
+                    function toggleDarkMode() {
+                      document.body.classList.toggle("dark-mode");
+                    }
+                  </script>
+                  
 </body>
 </html>
